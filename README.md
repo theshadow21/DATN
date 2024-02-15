@@ -5,5 +5,8 @@
 - Install face recognition https://github.com/ageitgey/face_recognition/tree/master
 - Install Imutils
 - ``` pip install imutils ```
-3. ```cd DATN
-  python main.py```
+3. Run
+  ```
+  cd DATN
+  python main.py
+  ```
