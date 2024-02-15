@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto h-[720px] flex">
+        <div class="w-[230px] h-[720px] bg-gradient-to-b from-neutral-100 to-stone-50 text-center text-black text-base font-normal font-['Poppins'] pt-[80px] py-[31px]">
+            <button class="w-[169px] h-[42px] bg-zinc-400 rounded-lg hover:bg-orange-300" id="bt_stream" onclick="gotoStream()">Stream</button>
+            <button class="w-[169px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg mt-[28px] hover:bg-orange-300" id="bt_recording" onclick="gotoStream()">Recording</button>
+            <button class="w-[169px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg mt-[28px] hover:bg-orange-300" id="bt_setting">Setting</button>
+        </div>
+        <div class="w-[680px] h-[520px] relative bg-zinc-100 rounded-xl ml-[100px] mt-[80px]">
+            <div class="w-[670px] h-[500px] left-[7px] top-[7px] absolute bg-white rounded-xl">
+                <img src="{{ url_for('video_feed') }}" class="rounded-xl w-[670px] h-[500px]">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById("bt_stream").addEventListener("click", function() {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/streaming";
+    });
+    document.getElementById("bt_recording").addEventListener("click", function() {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/recording";
+    });
+    document.getElementById("bt_setting").addEventListener("click", function() {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/setting";
+    });
+</script>
+</html>

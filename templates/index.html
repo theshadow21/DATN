@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/login.css')}}" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+      <div class="camera-streaming">Camera Streaming</div>
+      <form class="login-form" id="LoginForm" action="/login" method="post">
+        <div class="user-name">User Name</div>
+        {% if disable %}
+          <input id="username" type="text" placeholder="Enter Username" class="username-input" name="username" disabled></input>
+        {% else %}
+          <input id="username" type="text" placeholder="Enter Username" class="username-input" name="username"></input>
+        {% endif %}
+        <div class="password">Password</div>
+        {% if disable %}
+          <input id="input_password" type="password" placeholder="Enter password" class="password-input" name="password" disabled></input>
+        {% else %}
+          <input id="input_password" type="password" placeholder="Enter password" class="password-input" name="password"></input>
+        {% endif %}
+        {% if error %}
+          <p class="error">{{ error }}</p>
+        {% endif %}
+        <button type="submit" id="login" class="login-button">Login</button>
+      </div>
+    </div>
+</body>
+</html>

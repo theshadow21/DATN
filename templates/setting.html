@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{url_for('static', filename='javascript/setting_pages.js')}}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container mx-auto h-[720px] flex">
+        <div
+            class="w-[230px] h-[720px] bg-gradient-to-b from-neutral-100 to-stone-50 text-center text-black text-base font-normal font-['Poppins'] pt-[80px] py-[31px]">
+            <button class="w-[169px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-orange-300" id="bt_stream"
+                onclick="gotoStream()">Stream</button>
+            <button class="w-[169px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-orange-300 mt-[28px]" id="bt_recording"
+                onclick="gotoStream()">Recording</button>
+            <button class="w-[169px] h-[42px] bg-zinc-400 rounded-lg hover:bg-orange-300 mt-[28px]" id="bt_setting">Setting</button>
+        </div>
+        <div class="w-[520px] h-[520px] relative bg-zinc-100 rounded-xl ml-[100px] mt-[80px]">
+            <!-- <div class="w-[520px] h-[30px] bg-green-400 rounded-ml mt-[10px]">
+                <h1>total: 65gb use: 10Gb</h1>
+            </div> -->
+            <div class="w-full h-6 bg-slate-400 rounded-xl dark:bg-slate-700 mt-[10px] flex text-center">
+                <div id="free_space" class="h-6 bg-green-300 rounded-xl dark:bg-green-500" style="width: 45%"></div>
+                <h1 id="text_space" class="pl-[30px] text-white">Total: 63 GB, Used: 10 GB</h1>
+            </div>
+            <img id="video_display" src="" width="670px" height="500px" class="rounded-xl mt-[10px]">
+        </div>
+        <div class="w-[250px] text-center text-black text-base font-normal font-['Poppins'] pt-[80px] ml-[30px]">
+            <input id="i_email" type="email" placeholder="Email" class="w-[200px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg mb-[15px]">
+            <input id="i_name" type="text" placeholder="Name" class="w-[200px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg mb-[15px]">
+            <button class="w-[200px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-blue-400 mb-[30px]" onclick="settingOwner()">Send</button>
+            <button id="take_picture" class="w-[200px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-blue-400 mb-[15px]" onclick="takePicture()">Take Picture</button>
+            <button id="train_model" class="w-[200px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-blue-400 mb-[50px]" onclick="trainModel()">Train model</button>
+            <p class="pl-[5px]">Start time</p>
+            <input class="ml-[10px] mb-[15px]" type="time" id="start_time">
+            <p class="pl-[5px]">Stop time</p>
+            <input class="ml-[10px] mb-[15px]" type="time" id="stop_time">
+            <button class="w-[169px] h-[42px] bg-zinc-300 bg-opacity-40 rounded-lg hover:bg-blue-400" onclick="settingTime()">Setting Time</button>
+        </div>
+        <div id="list-video" class="w-[160px] h-[520px] bg-neutral-100 rounded-lg ml-[10px] mt-[80px] overflow-auto">
+
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("bt_stream").addEventListener("click", function () {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/streaming";
+    });
+    document.getElementById("bt_recording").addEventListener("click", function () {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/recording";
+    });
+    document.getElementById("bt_setting").addEventListener("click", function () {
+        // Change "targetPage.html" to the URL of the page you want to redirect to
+        window.location.href = "/setting";
+    });
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "email": "xuantuanncth1@gmail.com",
+  "name": "tuandx",
+  "picture": 0,
+  "train_model": "true",
+  "time": {
+    "start_time": "21:08",
+    "end_time": "21:15"
+  },
+  "account": {
+    "administrator": {
+      "email": "admin@example.com",
+      "password": "pass@123"
+    },
+    "guest1": {
+      "email": "guest1@example.com",
+      "password": "pass@123"
+    },
+    "guest2": {
+      "email": "guest2@example.com",
+      "password": "pass@123"
+    }
+  }
+}

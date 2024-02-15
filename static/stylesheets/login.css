@@ -1,0 +1,132 @@
+.main,
+.main * {
+  box-sizing: border-box;
+}
+.main {
+  width: 100vw;
+  height: 720px;
+  position: relative;
+  /* overflow: hidden; */
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+.text-warning {
+  text-align: center;
+  margin-left: 50px;
+  position: absolute;
+  top: 160px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  background: #f8f8f8;
+  border-radius: 8px;
+  width: 366px;
+  height: 322px;
+  position: absolute;
+  left: 85px;
+  top: 233px;
+  overflow: hidden;
+}
+.password-input {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 1px;
+  width: 270px;
+  height: 48px;
+  position: absolute;
+  left: 44px;
+  top: 151px;
+}
+.username-input {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 1px;
+  width: 270px;
+  height: 48px;
+  position: absolute;
+  left: 44px;
+  top: 54px;
+}
+.login-button {
+  background: #ff4747;
+  border-radius: 12px;
+  border-style: none;
+  width: 270px;
+  height: 48px;
+  position: absolute;
+  left: 44px;
+  top: 242px;
+  font: 400 18px "Poppins", sans-serif;
+}
+.user-name {
+  color: #000000;
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 26px;
+  width: 100px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password {
+  color: #000000;
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 44px;
+  top: 117px;
+  width: 101px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font: 400 12px "Poppins", sans-serif;
+  position: absolute;
+  left: 44px;
+  top: 205px;
+  width: 270px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  color: #000000;
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 150px;
+  top: 257px;
+  width: 57px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.camera-streaming {
+  color: #601f1f;
+  text-align: center;
+  font: 400 48px "Poppins", sans-serif;
+  position: absolute;
+  margin-left: 50px;
+  top: 155px;
+  width: 468px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,1 @@
+ffmpeg -i 01022024.avi -c:v copy -c:a copy 01022024.mp4
