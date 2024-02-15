@@ -4,7 +4,7 @@
 - Install opencv for raspberry pi https://raspberrypi-guide.github.io/programming/install-opencv
 - Install face recognition https://github.com/ageitgey/face_recognition/tree/master
 - Install Imutils
-- ``` pip install imutils ```
+  ``` pip install imutils ```
 3. Run
   ```
   cd DATN
